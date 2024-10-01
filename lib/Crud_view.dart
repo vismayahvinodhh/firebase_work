@@ -121,7 +121,7 @@ class _View_crudState extends State<View_crud> {
                   padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
                   child: InkWell(onTap: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return Crud_viewdetails();
+                      return Crud_viewdetails(id:doc.id);
                     },));
                   },
                     child: Card(color: Colors.brown.shade200
